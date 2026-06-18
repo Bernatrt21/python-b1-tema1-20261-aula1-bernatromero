@@ -41,9 +41,9 @@ Exemple:
 def fibonacci(fibonacci_number):
     # Write here your code
         if not isinstance(fibonacci_number, int):
-            return ValueError("Revisa que només envies números")
+            raise ValueError("Revisa que només envies números")
         elif fibonacci_number < 0: 
-             return ValueError("Número ha de ser mayor que 0")
+             raise ValueError("Número ha de ser mayor que 0")
         elif fibonacci_number == 0:
             return 0
         elif fibonacci_number == 1: 
@@ -53,4 +53,4 @@ def fibonacci(fibonacci_number):
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# print(fibonacci("Ld"))
+#   print(fibonacci(1))
